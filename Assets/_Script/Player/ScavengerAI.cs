@@ -25,7 +25,7 @@ public class ScavengerAI : UnitAI
 
     void Director()
     {
-        if(attack.haveTarget && base.action)
+        if(attack.haveTarget && base.groupState == GroupState.Idle)
         {
             movement.MoveToTarget(attack.targetPosition);
         }

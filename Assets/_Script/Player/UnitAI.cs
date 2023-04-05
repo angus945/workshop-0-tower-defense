@@ -5,11 +5,24 @@ using UnityEngine;
 
 public abstract class UnitAI : MonoBehaviour
 {
-    protected bool action;
-
-    public void ActiveAtion(bool active)
+    public enum GroupState
     {
-        action = active;
+        Idle,
+        Move,
+    }
+    public enum UnitState
+    {
+        Idle,
+        Move,
+        Attack,
+    }
+
+    protected GroupState groupState;
+    protected UnitState state;
+
+    public void ActiveAtion(GroupState state)
+    {
+        groupState = state;
     }
 
     public Vector3 standPoint;

@@ -28,7 +28,7 @@ public class UnitGroup : MonoBehaviour, IPoolObject
         {
             for (int i = 0; i < units.Count; i++)
             {
-                units[i].ActiveAtion(false);
+                units[i].ActiveAtion(UnitAI.GroupState.Move);
                 units[i].standPoint = transform.position + standPoints[i];
                 //TODO calculate stand point
             }
@@ -37,7 +37,7 @@ public class UnitGroup : MonoBehaviour, IPoolObject
         {
             for (int i = 0; i < units.Count; i++)
             {
-                units[i].ActiveAtion(true);
+                units[i].ActiveAtion(UnitAI.GroupState.Idle);
             } 
         }
     }
