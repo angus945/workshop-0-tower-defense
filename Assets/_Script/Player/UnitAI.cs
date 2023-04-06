@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class UnitAI : MonoBehaviour
@@ -17,8 +14,8 @@ public abstract class UnitAI : MonoBehaviour
         Attack,
     }
 
-    protected GroupState groupState;
-    protected UnitState state;
+    protected GroupState groupState = GroupState.Idle;
+    protected UnitState state = UnitState.Idle;
 
     public void ActiveAtion(GroupState state)
     {

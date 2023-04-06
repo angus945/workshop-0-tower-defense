@@ -74,4 +74,5 @@ public class UnitGroup : MonoBehaviour, IPoolObject
     //IPoolObject
     public Action triggerRecycle { get; set; }
     void IPoolObject.OnRecycle() { }
+    void IPoolObject.OnActive() { }
 }

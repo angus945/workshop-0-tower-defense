@@ -44,6 +44,16 @@ public class PlayerBuilder : MonoBehaviour
             Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             BuildInstance(builds[3], pos);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            BuildInstance(builds[4], pos);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            BuildInstance(builds[5], pos);
+        }
     }
 
     public bool VaildBuild(BuildInstance product)

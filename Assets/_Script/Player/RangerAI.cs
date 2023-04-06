@@ -22,7 +22,8 @@ public class RangerAI : UnitAI
     }
     void Update()
     {
-        attack.enabled = groupState == GroupState.Idle && bullet.count > 0;
+        //attack.enabled = groupState == GroupState.Idle && bullet.count > 0;
+        attack.enabled = groupState == GroupState.Idle;
     }
 
     public override int SendSupply(int supplyCount)

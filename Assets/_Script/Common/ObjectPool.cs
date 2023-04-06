@@ -7,6 +7,7 @@ public interface IPoolObject
 {
     Action triggerRecycle { get; set; }
     void OnRecycle();
+    void OnActive();
 }
 
 [System.Serializable]

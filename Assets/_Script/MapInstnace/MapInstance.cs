@@ -22,18 +22,13 @@ public class MapInstance : MonoBehaviour, IPoolObject
                 onHealthZeroing?.Invoke(this);
                 triggerRecycle?.Invoke();
 
-                Debug.LogError("Death");
+                Debug.LogError("Death", this);
             }
         } 
     }
 
     public Action<int> onHealthUpdated;
     public Action<MapInstance> onHealthZeroing;
-
-    void Start()
-    {
-        
-    }
 
     public void SendDamage(int damage)
     {
@@ -44,6 +39,10 @@ public class MapInstance : MonoBehaviour, IPoolObject
     public Action triggerRecycle { get; set; }
     void IPoolObject.OnRecycle()
     {
-        //Debug.LogError("RECULE");
+
+    }
+    void IPoolObject.OnActive()
+    {
+        _health = maxHealth;
     }
 }

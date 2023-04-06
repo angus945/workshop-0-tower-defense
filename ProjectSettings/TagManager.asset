@@ -12,16 +12,16 @@ TagManager:
   - Water
   - UI
   - 
+  - Unit
+  - Building
+  - 
+  - Relic
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemy_Fly
+  - Enemy_Ground
+  - Enemy_Under
   - 
   - 
   - 

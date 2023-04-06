@@ -8,7 +8,7 @@ public class UnitSupply : MonoBehaviour
     [SerializeField] float supplyTime;
     [SerializeField] LayerMask supplyLayer;
 
-    Collider2D[] supplyTargets = new Collider2D[30];
+    Collider2D[] supplyTargets = new Collider2D[300];
     float supplyTimer;
 
     void Update()

@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15221dcc13fce304092b1e3cdd1d46a2, type: 3}
-  m_Name: Resources
+  m_Name: Relic_Bigeyes
   m_EditorClassIdentifier: 
   icon: {fileID: 0}
