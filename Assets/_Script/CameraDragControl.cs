@@ -17,6 +17,8 @@ namespace MapSystems
         }
         void Update()
         {
+            if (Time.timeScale == 0) return;
+
             float scroll = -Input.mouseScrollDelta.y;
             controlCamera.orthographicSize += (controlCamera.orthographicSize * scroll / 2) * 0.5f;
 
